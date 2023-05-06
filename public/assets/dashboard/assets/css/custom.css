@@ -1,0 +1,349 @@
+/*================================================
+    register.blade.php & login.blade.php start
+================================================*/
+.error_div ul{
+    margin-left: 10px !important;
+}
+.login-layout{
+    background-color: #DFE0E2;
+}
+.dark-login{
+    background-color: #1D2024;
+}
+.login-container{
+    margin: 0 auto;
+    margin-top: 8%;
+}
+/*================================================
+    register.blade.php & login.blade.php end
+================================================*/
+
+/* file upload */
+.file-upload .file-upload-select {
+	display: block;
+	cursor: pointer;
+	text-align: left;
+	background: #fff;
+    border: 1px solid rgb(181, 181, 181, 0.7);
+	overflow: hidden;
+	position: relative;
+}
+.file-upload .file-upload-select .file-select-button {
+    background: #6FB3E0;
+    color: #fff;
+    padding: 5px 8px;
+    margin-left: 3px;
+    display: inline-block;
+}
+.file-upload .file-upload-select .file-select-name {
+	display: inline-block;
+	padding: 7px 10px;
+}
+
+.file-upload .file-upload-select input[type="file"] {
+	display: none;
+}
+
+
+/* toggle switch button */
+.toggle-btn {
+    width: 60px;
+    height: 24px;
+    margin: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==") no-repeat 37px center #e74c3c;
+    cursor: pointer;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .toggle-btn.active {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC") no-repeat 10px center #2ecc71;
+  }
+  .toggle-btn.active .round-btn {
+    left: 39px;
+  }
+  .toggle-btn .round-btn {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 75%;
+    margin-top: -15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .toggle-btn .cb-value {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+
+
+
+
+
+/*===================================
+        app.blade.php start
+====================================*/
+.no-skin .nav-list > li > a {
+    color: #1D2024;
+    font-size: 13px;
+}
+.no-skin .nav-list > li .submenu > li > a .fa-user {
+    margin-right: 3px;
+}
+.no-skin .nav-list > li .submenu > li > a .fa-building {
+    margin-right: 3px;
+}
+/*===================================
+        app.blade.php start
+====================================*/
+
+
+
+
+/*===================================
+        home.blade.php start
+====================================*/
+/* .page-content .welcome{
+    background: #438EB9;
+} */
+.page-content .welcome button{
+    color: #007bff ;
+    opacity: 0.7;
+}
+.page-content .welcome button:hover{
+    opacity: 1;
+    color: #ffc107 ;
+    transition: 0.4s;
+}
+.page-content .welcome .check_i_tag{
+    color: #007bff ;
+}
+.page-content .welcome span{
+    color: #007bff ;
+}
+.page-content .welcome .green{
+    color: #007bff  !important;
+}
+/*===================================
+        home.blade.php end
+====================================*/
+/*===================================
+        app.blade.php end
+====================================*/
+.footer .row{
+    display: flex;
+}
+.footer .left{
+    margin-left: 10px;
+}
+.footer .right{
+    margin-right: 10px;
+}
+/*===================================
+        app.blade.php end
+====================================*/
+
+/*=============================================
+    frontend home.blade small-box style start
+===============================================*/
+.small-box {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.small-box > .inner {
+    padding: 10px;
+}
+
+.small-box > .small-box-footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.small-box > .small-box-footer:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.small-box h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+    .col-xl-2 .small-box h3,
+    .col-lg-2 .small-box h3,
+    .col-md-2 .small-box h3 {
+        font-size: 1.6rem;
+    }
+    .col-xl-3 .small-box h3,
+    .col-lg-3 .small-box h3,
+    .col-md-3 .small-box h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-2 .small-box h3,
+    .col-lg-2 .small-box h3,
+    .col-md-2 .small-box h3 {
+        font-size: 2.2rem;
+    }
+    .col-xl-3 .small-box h3,
+    .col-lg-3 .small-box h3,
+    .col-md-3 .small-box h3 {
+        font-size: 2.2rem;
+    }
+}
+
+.small-box p {
+    font-size: 1rem;
+}
+
+.small-box p > small {
+    color: #f8f9fa;
+    display: block;
+    font-size: .9rem;
+    margin-top: 5px;
+}
+
+.small-box h3,
+.small-box p {
+    z-index: 5;
+}
+
+.small-box .icon {
+    color: rgba(0, 0, 0, 0.15);
+    z-index: 0;
+}
+
+.small-box .icon > i {
+    font-size: 90px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.small-box .icon > i.fa, .small-box .icon > i.fas, .small-box .icon > i.far, .small-box .icon > i.fab, .small-box .icon > i.fal, .small-box .icon > i.fad, .small-box .icon > i.ion {
+    font-size: 70px;
+    top: 20px;
+}
+
+.small-box .icon svg {
+    font-size: 70px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.small-box:hover {
+    text-decoration: none;
+}
+
+.small-box:hover .icon > i, .small-box:hover .icon > i.fa, .small-box:hover .icon > i.fas, .small-box:hover .icon > i.far, .small-box:hover .icon > i.fab, .small-box:hover .icon > i.fal, .small-box:hover .icon > i.fad, .small-box:hover .icon > i.ion {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.small-box:hover .icon > svg {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media (max-width: 767.98px) {
+    .small-box {
+        text-align: center;
+    }
+    .small-box .icon {
+        display: none;
+    }
+    .small-box p {
+        font-size: 12px;
+    }
+}
+
+.small-box > .overlay,
+.small-box > .loading-img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.small-box .overlay {
+    border-radius: 0.25rem;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.small-box .overlay > .fa,
+.small-box .overlay > .fas,
+.small-box .overlay > .far,
+.small-box .overlay > .fab,
+.small-box .overlay > .fal,
+.small-box .overlay > .fad,
+.small-box .overlay > .svg-inline--fa,
+.small-box .overlay > .ion {
+  color: #343a40;
+}
+
+.small-box .overlay.dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.small-box .overlay.dark > .fa,
+.small-box .overlay.dark > .fas,
+.small-box .overlay.dark > .far,
+.small-box .overlay.dark > .fab,
+.small-box .overlay.dark > .fal,
+.small-box .overlay.dark > .fad,
+.small-box .overlay.dark > .svg-inline--fa,
+.small-box .overlay.dark > .ion {
+  color: #ced4da;
+}
+/*=============================================
+    frontend home.blade small-box style end
+===============================================*/
