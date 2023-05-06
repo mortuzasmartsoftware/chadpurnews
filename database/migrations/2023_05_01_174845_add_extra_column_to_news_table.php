@@ -32,3 +32,4 @@ class AddExtraColumnToNewsTable extends Migration
         });
     }
 }
+

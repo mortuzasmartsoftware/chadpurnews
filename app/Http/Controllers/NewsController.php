@@ -241,7 +241,7 @@ class NewsController extends Controller
 
     public function news_details($id, $link)
     {
-
+        
         $news_details = News::where('link', $link)->first();
         $data = array();
         $data['hit_counter'] = $news_details->hit_counter + 1;

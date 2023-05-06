@@ -561,8 +561,8 @@ a[href^=tel] {
 }
 
 .post-title.title-small {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 19px;
     margin-top: 15px;
     margin-bottom: 5px;
 }
@@ -602,7 +602,7 @@ a.post-cat {
 }
 
 .post-meta span {
-    font-size: 12px;
+    font-size: 15px;
     color: #a3a3a3;
     margin-right: 8px;
     padding-right: 10px;
@@ -2584,7 +2584,7 @@ ul.navbar-nav>li.mega-dropdown {
 .single-post .post-title {
     font-size: 30px;
     line-height: 35px;
-    padding: 5px 0 0px 0;
+    padding: 10px 0px;
     margin: 0;
 }
 

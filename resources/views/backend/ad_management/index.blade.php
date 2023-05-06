@@ -64,9 +64,9 @@
                                                     {{-- <td>{{ $all_adds->script }}</td> --}}
                                                     <td class="text-center">
                                                         @if ( strpos($all_adds->ads_image,'assets') )
-                                                            <img src="{{ asset($all_adds->ads_image) }}" alt="Not Found" width="300px" height="100%">
+                                                            <img src="{{ asset($all_adds->ads_image) }}" alt="Not Found" width="150px" height="80px">
                                                         @else
-                                                            <img src="{{asset('img/ads-image/'.$all_adds->ads_image)}}" alt="Not Found" width="300px" height="100%">
+                                                            <img src="{{asset('img/ads-image/'.$all_adds->ads_image)}}" alt="Not Found" width="150px" height="80px">
                                                         @endif
                                                     </td>
                                                     <td class="text-center">{{ $all_adds->ads_position->position_name }}</td>

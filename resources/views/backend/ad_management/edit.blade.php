@@ -61,8 +61,8 @@
                                             <select name="serial_num" type="number" class="form-control filter-serial" id="sl-no" onchange="loadSerialWiseImageSizes(this)">
                                                 {{-- <option value="">-Select a Serial-</option> --}}
                                                 @foreach ($ads_serial as $serial)
-                                                    <option value=""
-                                                    {{ $serial->ads_serial_id == $target_ads->serial_num ? 'selected' : '' }}>
+                                              
+                                                    <option value="{{ $serial->ads_serial_id }}" {{ $serial->ads_serial_id == $target_ads->serial_num ? 'selected' : '' }}>
                                                     {{ $serial->ads_serial->serial_name }}</option>
                                                 @endforeach
 
@@ -83,10 +83,10 @@
                                             <div class=" no-padding-right" style="padding-left: 0px !important;">
                                                 @if (strpos($target_ads->ads_image, 'assets'))
                                                     <img src="{{ asset($target_ads->ads_image) }}" alt="Not found"
-                                                        width="820px" height="100%">
+                                                        width="300px" height="180px">
                                                 @else
                                                     <img src="{{ asset('img/news/' . $target_ads->ads_image) }}"
-                                                        alt="Not found" width="820px" height="100%">
+                                                        alt="Not found" width="300px" height="180px">
                                                 @endif
                                             </div>
                                         </div>

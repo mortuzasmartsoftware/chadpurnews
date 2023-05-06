@@ -70,6 +70,7 @@
                             @endif
                         @endforeach
                     </div>
+                 
                     {{-- Position of Page Content3 Advertisement End --}}
                 </div>
             </div>
@@ -113,8 +114,7 @@
 
                                             <div class="post-content home-post">
                                                 <h2 class="post-title title-medium">
-                                                    <a
-                                                        href='{{ URL::to("article/$featured->id/$featured->link") }}'>{{ $featured->title }}</a>
+                                                    <a href='{{ URL::to("article/$featured->id/$featured->link") }}'>{{ $featured->title }}</a>
                                                 </h2>
                                                 <!-- <div class="post-meta">
                                                                     <span class="post-author"><a href="#">John Doe</a></span>
@@ -128,7 +128,8 @@
                             @endforeach
 
                             <!-- Item 4 end -->
-                        </div><!-- Latest News owl carousel end-->
+                        </div>
+                        <!-- Latest News owl carousel end-->
                     </div>
                     <!--- Latest news end -->
 
@@ -651,7 +652,6 @@
                         @endif
                     @endforeach
                 </div>
-
                 {{-- ------------------ CATEGORY 7 START ------------------ --}}
                 @foreach ($categories as $category)
                     @if ($category->serial_num == 7)

@@ -34,7 +34,7 @@
 
                         <div class="post-content-area">
                             <div class="post-media post-featured-image">
-                                <div class="banner_section custom-image">
+                                {{-- <div class="banner_section custom-image">
                                     @foreach ($ads_manages as $ads_manage)
                                         @if ($ads_manage->serial_num == 6)
                                             @if ($ads_manage->script_image_status == 0)
@@ -47,12 +47,12 @@
                                             @else
                                                 <h3 style="font-family: Stylish;">Place Your Ads(Size 750 X 100)</h3>
                                                 <lottie-player src="{{ asset('/frontend/lord-icon/banner-ads-red.json') }}"
-                                                    background="transparent" speed="1" style="width: 120px; height: 120px;" loop
+                                                    background="transparent" speed="1" style="width: 100%; height: 120px;" loop
                                                     autoplay></lottie-player>
                                             @endif
                                         @endif
                                     @endforeach
-                                </div>
+                                </div> --}}
 
                                 <?php if($news_details->photo){ ?>
                                 @if (strpos($news_details->photo, 'assets'))
@@ -104,11 +104,12 @@
                                     <h3 class="text-center">--{{ $news_details->whose_quote }}</h3>
                                 @endif
                             </div>
-                            <div class="entry-content" >
-                                <?php echo $news_details->description; ?>
+                            <div class="entry-content text-justify" >
+                                {{ $news_details->description }}
                             </div><!-- Entery content end -->
 
                             <div class="banner_section custom-image">
+                           
                                 @foreach ($ads_manages as $ads_manage)
                                     @if ($ads_manage->serial_num == 11)
                                         @if ($ads_manage->script_image_status == 0)
@@ -257,8 +258,8 @@
 
                                         <div class="post-content">
                                             <h2 class="post-title">
-                                                <a
-                                                    href='{{ URL::to("article/$p_news->id/$p_news->link") }}'>{{ $p_news->title }}</a>
+                                               
+                                                <a href='{{ URL::to("article/$p_news->id/$p_news->link") }}'>{{ $p_news->title }}</a>
                                             </h2>
                                             <div class="post-meta">
                                                 <span class="post-date"><?php
@@ -304,13 +305,13 @@
                                                     <div class="post-content">
                                                         <h2 class="post-title title-small">
                                                             <a
-                                                                href='{{ URL::to("article/$p_news->id/$p_news->link") }}'>{{ $p_news->title }}</a>
+                                                                href='{{ URL::to("article/$p_news->id/$p_news->link") }}'>{{ Str::limit($p_news->title, 50) }}</a>
                                                         </h2>
                                                         <div class="post-meta">
                                                             <span class="post-date">
-                                                                <?
-                                        echo date(' jS M Y',strtotime($p_news->created_at));
-                                        ?>
+                                                                <?php
+                                                                    echo date(' jS M Y',strtotime($p_news->created_at));
+                                                                ?>
                                                             </span>
                                                         </div>
                                                     </div><!-- Post content end -->

@@ -63,7 +63,7 @@
                                                 style="font-size: 21px;margin-top: 10px;color: #fff;font-weight: bold">
                                                 {{-- {{ str_limit($slider_news->title,50) }} --}}
                                                 {{-- my custom code --}}
-                                                {{ Str::limit($slider_news->title, 50) }}
+                                                {{ Str::limit($slider_news->title, 50) }} 
                                             </a>
                                         </h2>
 
@@ -80,6 +80,8 @@
                         <!-- Item 2 end -->
                     </div><!-- Featured owl carousel end-->
                 </div>
+
+
                 <div class="col-md-4 col-xs-12 col-sm-4 no-padding">
                     @foreach ($featurd_news as $key => $featurd)
                         <?php if ($key > 3) {
@@ -115,6 +117,7 @@
                         @endif
                     @endforeach
                 </div>
+
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12">
 
@@ -158,10 +161,10 @@
                                             <div class="post-block-style post-float clearfix">
 
 
-                                                <div class="post-content" style="max-width: 300px; max-height: 45px; overflow: hidden;">
+                                                <div class="post-content" style="max-width: 300px; max-height: 50px; overflow: hidden;">
                                                     <h2 class="post-title title-small">
                                                         <a
-                                                            href='{{ URL::to("article/$l_news->id/$l_news->link") }}'>{{ $l_news->title }}</a>
+                                                            href='{{ URL::to("article/$l_news->id/$l_news->link") }}'>{{ Str::limit($l_news->title, 50) }}</a>
                                                     </h2>
 
                                                 </div><!-- Post content end -->

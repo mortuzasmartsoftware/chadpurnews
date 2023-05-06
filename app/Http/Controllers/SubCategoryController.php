@@ -16,6 +16,7 @@ class SubCategoryController extends Controller
     */
     public function index()
     {
+        
         return view('backend.subcategory.index',[
             'all_adds' => SubCategory::all(),
             // 'cat_name' => Category::select('name')->where($all_adds->fk_category_id,'id'),

@@ -59,12 +59,15 @@
                                 </thead>
                                 <tbody>
                                     @forelse ($all_adds as $all_adds)
+                                  
                                         <tr>
                                             <th>{{ $loop->index+1 }}</th>
                                             <td>{{ $all_adds->name }}</td>
                                             <td>{{ $all_adds->link }}</td>
                                             <td class="text-center">{{ $all_adds->serial_num }}</td>
-                                            <td>{{ $all_adds->category->name }}</td>
+
+                                            <td>{{ $all_adds->category ? $all_adds->category->name : ""  }}</td>
+                                     
                                             <td>
                                                 @if ($all_adds->status == 1)
                                                     <a href="{{ route('subCat_status',$all_adds->id) }}"><i class="fa fa-toggle-on" style="font-size: 24px"></i></a>

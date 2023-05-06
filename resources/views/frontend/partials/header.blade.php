@@ -269,31 +269,33 @@ $menus = DB::table('menu')
     <header id="header" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-3" style="padding-right: 0 !important;margin: 15px 0">
-                    <div class="logo" style="width: 272px;">
+                <div class="col-sm-6 col-md-6 col-lg-5" style="padding-right: 0 !important;margin: 15px 0">
+                    <div class="logo" style="max-width:100%">
                         {{-- TEST 2 --}}
                         @if (strpos($info->logo, 'assets'))
-                            <a href="{{ URL::to('/') }}" id="show">
-                                <img style="width:510px; height:100%;" src="{{ asset($info->logo) }}"
+                            <a href="{{ URL::to('/') }}" >
+                                <img style="width:100%;" src="{{ asset($info->logo) }}"
                                     alt="{{ $info->company_name }}">
                             </a>
+                           
                         @else
                             <a href="{{ URL::to('/') }}">
-                                <img style="width:100%; height:80px;" src="{{ asset('img/' . $info->logo) }}"
+                                <img style="width:100%;" src="{{ asset('img/' . $info->logo) }}"
                                     alt="image">
                             </a>
                         @endif
                     </div>
                 </div><!-- logo col end -->
+                <div style="display: flex; justify-content: end;">
 
-                <div style="display: flex; justify-content: end;margin-top:-10px">
-                    <div class="col-sm-8 col-md-8 col-lg-9 ad-responsive-container">
+                    <div class="col-sm-6 col-md-6 col-lg-7 ad-responsive-container">
                         @if (Request::path() == 'media')
                             <div class="pull-right">
                                 <a href="https://www.tradebangla.com.bd" target="_blank"> <img
                                         src="http://www.desimediapoint.com/adManager/trade.gif"> </a>
                             </div>
                         @else
+
                             <div class="pull-right custom-image">
                                 @if (isset($ads1->ads_image) and $ads1->script_image_status == 0)
                                     <a href="{{ asset($ads1->image_url) }}" target="_blank">
@@ -307,13 +309,14 @@ $menus = DB::table('menu')
                                         390 X 150)</h4>
                                     <lottie-player src="{{ asset('/frontend/lord-icon/banner-ads-red.json') }}"
                                         background="transparent" speed="1"
-                                        style="width: 100px; height: 100px;margin-top:-15px" loop autoplay></lottie-player>
+                                        style="width: 100%; height: 100px;margin-top:-15px" loop autoplay></lottie-player>
                                 @endif
 
                             </div>
                         @endif
                     </div>
-                    <div class="col-sm-8 col-md-8 col-lg-9 ad-responsive-container">
+
+                    <div class="col-sm-6 col-md-6 col-lg-7 ad-responsive-container">
                         @if (Request::path() == 'media')
                             <div class="pull-right">
                                 <a href="https://www.tradebangla.com.bd" target="_blank"> <img
@@ -333,15 +336,13 @@ $menus = DB::table('menu')
                                         390 X 150)</h4>
                                     <lottie-player src="{{ asset('/frontend/lord-icon/banner-ads-red.json') }}"
                                         background="transparent" speed="1"
-                                        style="width: 100px; height: 100px;margin-top:-15px" loop autoplay></lottie-player>
+                                        style="width: 100%; height: 100px;margin-top:-15px" loop autoplay></lottie-player>
                                 @endif
 
                             </div>
                         @endif
                     </div>
                 </div><!-- header right end -->
-
-
 
             </div><!-- Row end -->
         </div><!-- Logo and banner area end -->

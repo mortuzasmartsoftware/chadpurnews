@@ -39,18 +39,20 @@ class PageController extends Controller
     */
     public function store(Request $request)
     {
+        // return $request->all();
         $request->validate([
             'link'  => 'required|max:50|unique:page,link',
             'name'  => 'required',
             'title' => 'required',
             'file' => 'mimes:pdf',
         ]);
+        
         try {
 
             $page = Page::create([
                 'name'=> $request->name,
                 'title'=> $request->title,
-                'description'=> $request->description,
+                'description'=> $request->description ?? "",
                 'status'=> $request->status,
                 'link'=> $request->link,
                 'file'=> 'default.pdf',

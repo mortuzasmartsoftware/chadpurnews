@@ -78,6 +78,7 @@ class AdsManagementController extends Controller
     */
     public function edit($id)
     {
+       
         $data['target_ads'] = AdsManagement::find($id);
         $data['ads_position'] = AdsPosition::where('status',1)->get();
 
@@ -95,11 +96,13 @@ class AdsManagementController extends Controller
     */
     public function update(Request $request, $id)
     {
-        // ddd($request);
+     
         $request->validate([
             'serial_num' => 'required|numeric',
         ]);
+   
         try {
+            
             $model = AdsManagement::find($id);
             if($request->file('ads_image') != NULL){
                 $model->update([
@@ -126,6 +129,7 @@ class AdsManagementController extends Controller
 
             return back()->with('success','Ads Updated Successfully');
         } catch (\Throwable $th) {
+    
             return redirect()->back()->with('error', $th->getMessage());
         }
 
